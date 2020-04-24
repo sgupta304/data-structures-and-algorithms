@@ -28,13 +28,6 @@ def insert_shift_arr_long_version(arr, val_to_insert):
     return new_arr
 
 
-def delete_shift_arr_long_version(arr):
-    len_array_int = int(len(arr) / 2)
-    if len(arr) % 2 != 0:
-        arr.pop(len_array_int)
-    return arr
-
-
 def get_middle_index(arr):
     len_array_int = int(len(arr) / 2)
     return len_array_int if len(arr) % 2 == 0 else len_array_int + 1
