@@ -22,21 +22,25 @@ Utilize the Single-responsibility principle: any methods you write should be cle
 
 __Note__: There is no test requirement for Class01. Going forward you will be required to test any code you produce unless otherwise directed by your instructional team.
 
-#### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+#### Approach & Efficiency/Solution
+The approach I took for this was simple. 
+* I loop through the array starting at the last index and looping until I reach the first.
+* I added each element into a new array
+* Then returned the newly created array since it has all the elements from the initial array in reverse
+* The complexity of this solution is `O(n)` as it depends on the size of the array since we are iterating over all the elements in the initial array
 
-#### Solution
+#### Check List
 - [ ] Take a photo of your completed whiteboard, matching the example whiteboard layout.
     - [ ] Copy your photo into an /assets directory in your repo
     - [ ] Give the image file the same name as the branch you are working on
     - [ ] Embed the image in your README.md documentation
 - [x] Create a pull request from your branch to your master branch
 - [x] In your open pull request, leave as a comment a checklist of the specifications and tasks above, with the actual steps that you completed checked off
-- [ ] Submitting your completed work to Canvas:
-    - [ ] Copy the link to your open pull request and paste it into the corresponding Canvas assignment
-    - [ ] Leave a description of how long this assignment took you in the comments box
-    - [ ] Add any additional comments you like about your process or any difficulties you may have had with the assignment
-- [ ] Merge your branch into master, and delete your branch (don’t worry, the PR link will still work)
+- [x] Submitting your completed work to Canvas:
+    - [x] Copy the link to your open pull request and paste it into the corresponding Canvas assignment
+    - [x] Leave a description of how long this assignment took you in the comments box
+    - [x] Add any additional comments you like about your process or any difficulties you may have had with the assignment
+- [x] Merge your branch into master, and delete your branch (don’t worry, the PR link will still work)
 
 ## Array Shift
 Write a function called `insertShiftArray` which takes in an array and the value to be added. Without utilizing any of the built-in methods available to your language, return an array with the new value added at the middle index.
@@ -47,17 +51,22 @@ Write a function called `insertShiftArray` which takes in an array and the value
 | ```[2,4,6,8], 5```  |  ```[2,4,5,6,8]``` | 
 | ```[4,8,15,23,42], 16```  |  ```[4,8,15,16,23,42]``` | 
 
-#### Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+#### Approach & Efficiency/Solution
+The approach I took for this challenge was first to get the index where I should be inserting the new value. I need to find what the middle point is of the given array, even if it has an even number of elements or odd.
+Once I knew that there were two approaches I took:
+* One was to use the in build `insert()` function as it allows us to insert an element at a specified index. This function has complexity of `O(n)` since insert it depends on the size of the array. 
+* The second approach I took was to loop through the array and insert elements into a new array from the previous array until I reach the index that is the mid point, at the instance I would insert the 
+new value and increment the counter (For this approach I need to keep track of multiple counters as one is for the old array and one is for the new array) for the new array in order to "shift" all the elements from the 
+previous array in the new array. 
 
-#### Solution
- - [ ] Top-level README “Table of Contents” is updated
- - [ ] Feature tasks for this challenge are completed
- - [ ] Unit tests written and passing
-     - [ ] “Happy Path” - Expected outcome
-     - [ ] Expected failure
-     - [ ] Edge Case (if applicable/obvious)
- - [ ] README for this challenge is complete
-     - [ ] Summary, Description, Approach & Efficiency, Solution
-     - [ ] Link to code
+#### Check List
+ - [x] Top-level README “Table of Contents” is updated
+ - [x] Feature tasks for this challenge are completed
+ - [x] Unit tests written and passing
+     - [x] “Happy Path” - Expected outcome
+     - [x] Expected failure
+     - [x] Edge Case (if applicable/obvious)
+ - [x] README for this challenge is complete
+     - [x] Summary, Description, Approach & Efficiency, Solution
+     - [x] Link to code
      - [ ] Picture of whiteboard
