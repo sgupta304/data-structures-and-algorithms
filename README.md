@@ -5,6 +5,7 @@ Table of contents
    * [Challenges](#challenges)
       * [Reverse an Array](#reverse-an-array)
       * [ArrayShift](#array-shift)
+      * [Binary Search](#binary-search)
 <!--te-->
 
 # Challenges
@@ -70,3 +71,32 @@ previous array in the new array.
      - [x] Summary, Description, Approach & Efficiency, Solution
      - [x] Link to code
      - [ ] Picture of whiteboard
+   
+## Binary Search
+Write a function called `BinarySearch` which takes in 2 parameters: a sorted array and the search key. Without utilizing any of the built-in methods available to your language, return the index of the array’s element that is equal to the search key, or -1 if the element does not exist.
+
+#### Example
+|  Input | Output  | 
+|---|---|
+| ```[4,8,15,16,23,42], 15```  |  ```2``` | 
+| ```[11,22,33,44,55,66,77], 90```  |  ```-1``` | 
+
+#### Approach & Efficiency/Solution
+The approach I took for this challenge was first to get the index where I should be inserting the new value. I need to find what the middle point is of the given array, even if it has an even number of elements or odd.
+Once I knew that there were two approaches I took:
+* One was to use the in build `insert()` function as it allows us to insert an element at a specified index. This function has complexity of `O(n)` since insert it depends on the size of the array. 
+* The second approach I took was to loop through the array and insert elements into a new array from the previous array until I reach the index that is the mid point, at the instance I would insert the 
+new value and increment the counter (For this approach I need to keep track of multiple counters as one is for the old array and one is for the new array) for the new array in order to "shift" all the elements from the 
+previous array in the new array. 
+
+#### Check List
+ - [x] Top-level README “Table of Contents” is updated
+ - [x] Feature tasks for this challenge are completed
+ - [x] Unit tests written and passing
+     - [x] “Happy Path” - Expected outcome
+     - [x] Expected failure
+     - [x] Edge Case (if applicable/obvious)
+ - [x] README for this challenge is complete
+     - [x] Summary, Description, Approach & Efficiency, Solution
+     - [x] Link to code
+     - [ ] Picture of whiteboard 
