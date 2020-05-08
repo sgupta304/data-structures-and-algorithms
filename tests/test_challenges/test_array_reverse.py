@@ -1,4 +1,4 @@
-from data_structures_and_algorithms.challenges.day_one.array_reverse import reverse_list
+from data_structures_and_algorithms.challenges.day_1.array_reverse import reverse_list
 
 
 def test_int_array():

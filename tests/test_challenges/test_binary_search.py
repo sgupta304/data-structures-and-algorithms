@@ -1,5 +1,5 @@
 import pytest
-from data_structures_and_algorithms.challenges.day_three.binary_search import binary_search
+from data_structures_and_algorithms.challenges.day_3.binary_search import binary_search
 
 
 @pytest.mark.parametrize(

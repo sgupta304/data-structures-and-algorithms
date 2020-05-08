@@ -1,4 +1,4 @@
-from data_structures_and_algorithms.challenges.day_two.insert_shift_array import insert_shift_arr, delete_shift_arr, \
+from data_structures_and_algorithms.challenges.day_2.insert_shift_array import insert_shift_arr, delete_shift_arr, \
     insert_shift_arr_long_version
 
 
