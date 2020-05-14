@@ -6,6 +6,8 @@ Table of contents
       * [Reverse an Array](#reverse-an-array)
       * [ArrayShift](#array-shift)
       * [Binary Search](#binary-search)
+      * [Mock Interviews](#mock-interviews)
+      * [Linked List](#linked-list)
 <!--te-->
 
 # Challenges
@@ -149,6 +151,43 @@ The approach I took for this challenge was to get traverse the row/column of eac
 Once I was done traversing the array, I took the sum of the current array and added the sum to a new list.
 I, then, returned the list. The `Big-O` notation for this function would depend on the size of the array, so
 the bigger the array, the bigger the time it would take to complete it. So it would be `O(n^2)`.
+
+#### Check List
+ - [x] Top-level README “Table of Contents” is updated
+ - [x] Feature tasks for this challenge are completed
+ - [x] Unit tests written and passing
+     - [x] “Happy Path” - Expected outcome
+     - [x] Expected failure
+     - [x] Edge Case (if applicable/obvious)
+ - [x] README for this challenge is complete
+     - [x] Summary, Description, Approach & Efficiency, Solution
+     - [x] Link to code
+     - [ ] Picture of whiteboard 
+     
+## Linked List
+* Create a Node class that has properties for the value stored in the Node, and a pointer to the next Node.
+* Within your LinkedList class, include a head property. Upon instantiation, an empty Linked List should be created.
+    * Define a method called `insert` which takes any value as an argument and adds a new node with that value to the `head` of the list with an O(1) Time performance.
+    * Define a method called `includes` which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
+    * Define a method called `toString` (or `__str__` in Python) which takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
+        * `{ a } -> { b } -> { c } -> NULL`
+* Any exceptions or errors that come from your code should be semantic, capturable errors. For example, rather than a default error thrown by your language, your code should raise/throw a custom, semantic error that describes what went wrong in calling the methods you wrote for this lab.
+* Be sure to follow your language/frameworks standard naming conventions (e.g. C# uses PascalCasing for all method and class names).
+
+#### Approach & Efficiency/Solution
+Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm in one function definition.
+
+Write tests to prove the following functionality:
+
+* Can successfully instantiate an empty linked list
+* Can properly insert into the linked list
+* The head property will properly point to the first node in the linked list
+* Can properly insert multiple nodes into the linked list
+* Will return true when finding a value within the linked list that exists
+* Will return false when searching for a value in the linked list that does not exist
+* Can properly return a collection of all the values that exist in the linked list
+
+Ensure your tests are passing before you submit your solution.
 
 #### Check List
  - [x] Top-level README “Table of Contents” is updated
