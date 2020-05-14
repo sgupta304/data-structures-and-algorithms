@@ -100,3 +100,64 @@ previous array in the new array.
      - [x] Summary, Description, Approach & Efficiency, Solution
      - [x] Link to code
      - [ ] Picture of whiteboard 
+     
+## Mock Interviews
+* Read all of the following instructions carefully.
+* Today, you and a peer will take turns interviewing each other with a code challenge
+* The interviewer will score the candidate according to the Whiteboard Rubric
+    * Notes can be taken in an electronic copy of the doc, or a print out of it
+    * In either case, the completed rubric will be given to the candidate for review purposes
+* The candidate submits the rubric with the score they achieved as a candidate
+* Each interview should be timeboxed to a strict 30 minutes
+
+Interview questions
+* Don’t look at the interview questions until you decide who will be the first interviewer.
+    1. The first interviewer will ask this [question](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-04/interview-01.html)
+    2. The second interviewer will ask this [question](https://codefellows.github.io/common_curriculum/data_structures_and_algorithms/Code_401/class-04/interview-02.html)
+
+#### Example
+##### Interview 01
+Given a matrix, find the sum of each row.
+
+|  Input | Output  | 
+|---|---|
+| ```[[1, 2, 3], [3, 5, 7], [1, 7, 10]]```  |  ```[6, 15, 18]``` | 
+| ```[ [0, 1, 5], [-4, 7, 2], [-3, 12, 11] ]```  |  ```[6, 5, 20]``` | 
+
+##### Interview 02
+Generate the nth Fibonacci number, 2 different ways.
+
+|  Input | Output  | 
+|---|---|
+| ```0```  |  ```0``` | 
+| ```1```  |  ```1``` | 
+| ```2```  |  ```1``` | 
+| ```3```  |  ```2``` | 
+| ```4```  |  ```3``` | 
+| ```5```  |  ```5``` | 
+| ```6```  |  ```8``` | 
+| ```7```  |  ```13``` | 
+| ```8```  |  ```21``` | 
+| ```...```  |  ```...``` | 
+| ```14```  |  ```377``` | 
+| ```...```  |  ```...``` | 
+| ```45```  |  ```1134903170``` | 
+| ```...```  |  ```...``` | 
+
+#### Approach & Efficiency/Solution
+The approach I took for this challenge was to get traverse the row/column of each the multidimensional array.
+Once I was done traversing the array, I took the sum of the current array and added the sum to a new list.
+I, then, returned the list. The `Big-O` notation for this function would depend on the size of the array, so
+the bigger the array, the bigger the time it would take to complete it. So it would be `O(n^2)`.
+
+#### Check List
+ - [x] Top-level README “Table of Contents” is updated
+ - [x] Feature tasks for this challenge are completed
+ - [x] Unit tests written and passing
+     - [x] “Happy Path” - Expected outcome
+     - [x] Expected failure
+     - [x] Edge Case (if applicable/obvious)
+ - [x] README for this challenge is complete
+     - [x] Summary, Description, Approach & Efficiency, Solution
+     - [x] Link to code
+     - [ ] Picture of whiteboard 
